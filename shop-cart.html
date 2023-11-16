@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <title>Shopping-cart</title>
+    <style>
+      body {
+        background-color: #d2cdff;
+      }
+
+      img {
+        height: 200px;
+        width: 180px;
+      }
+
+      @media screen and (max-width: 992px) {
+        .media {
+          flex-direction: column;
+        }
+
+        .left {
+          width: 100%;
+          margin: 0;
+        }
+
+        .right {
+          width: 100%;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="media container bg-white d-flex p-5 border border-light-subtle">
+      <!-- left side -->
+      <div class="left container p-4 col-8 me-4">
+        <!-- cart -->
+        <div class="d-flex justify-content-between align-items-center pb-5">
+          <div>
+            <h1 class="fw-bold">Shopping Cart</h1>
+          </div>
+          <div class="text-body-tertiary fw-semibold">3 Items</div>
+        </div>
+
+        <div
+          class="cart-borders d-flex justify-content-between align-items-center border-top border-bottom border-light-subtle border-2"
+        >
+          <!-- product -->
+          <div class="d-flex align-items-center pt-5 pb-5">
+            <div>
+              <img src="/img/product1.jpg" alt="product1" class="rounded-3" />
+            </div>
+            <div class="ms-4">
+              <div class="fs-5 fw-semibold text-body-tertiary">Shirt</div>
+              <div class="fs-5 fw-semibold">Cotton T-shirt</div>
+            </div>
+          </div>
+          <!-- quantity -->
+          <div class="d-flex align-items-center">
+            <div><i class="bi bi-dash text-primary fs-1"></i></div>
+            <div
+              class="border border-2 p-2 border-light-subtle rounded-1 ps-3"
+              style="width: 80px"
+            >
+              1
+            </div>
+            <div><i class="bi bi-plus text-primary fs-1"></i></div>
+          </div>
+          <!-- price -->
+          <div class="d-flex align-items-center">
+            <div class="fw-bold text-secondary fs-5">&#x20AC; 44.00</div>
+          </div>
+          <!-- 'x' remove product -->
+          <div>
+            <div class="text-secondary fw-bold fs-5">X</div>
+          </div>
+        </div>
+        <div
+          class="cart-borders d-flex justify-content-between align-items-center border-top border-bottom border-light-subtle border-2"
+        >
+          <!-- product -->
+          <div class="d-flex align-items-center pt-5 pb-5">
+            <div>
+              <img src="/img/product2.jpg" alt="product1" class="rounded-3" />
+            </div>
+            <div class="ms-4">
+              <div class="fs-5 fw-semibold text-body-tertiary">Shirt</div>
+              <div class="fs-5 fw-semibold">Cotton T-shirt</div>
+            </div>
+          </div>
+          <!-- quantity -->
+          <div class="d-flex align-items-center">
+            <div><i class="bi bi-dash text-primary fs-1"></i></div>
+            <div
+              class="border border-2 p-2 border-light-subtle rounded-1 ps-3"
+              style="width: 80px"
+            >
+              1
+            </div>
+            <div><i class="bi bi-plus text-primary fs-1"></i></div>
+          </div>
+          <!-- price -->
+          <div class="d-flex align-items-center">
+            <div class="fw-bold text-secondary fs-5">&#x20AC; 44.00</div>
+          </div>
+          <!-- 'x' remove product -->
+          <div>
+            <div class="text-secondary fw-bold fs-5">X</div>
+          </div>
+        </div>
+        <div
+          class="cart-borders d-flex justify-content-between align-items-center border-top border-bottom border-light-subtle border-2"
+        >
+          <!-- product -->
+          <div class="d-flex align-items-center pt-5 pb-5">
+            <div>
+              <img src="/img/product3.jpg" alt="product1" class="rounded-3" />
+            </div>
+            <div class="ms-4">
+              <div class="fs-5 fw-semibold text-body-tertiary">Shirt</div>
+              <div class="fs-5 fw-semibold">Cotton T-shirt</div>
+            </div>
+          </div>
+          <!-- quantity -->
+          <div class="d-flex align-items-center">
+            <div><i class="bi bi-dash text-primary fs-1"></i></div>
+            <div
+              class="border border-2 p-2 border-light-subtle rounded-1 ps-3"
+              style="width: 80px"
+            >
+              1
+            </div>
+            <div><i class="bi bi-plus text-primary fs-1"></i></div>
+          </div>
+          <!-- price -->
+          <div class="d-flex align-items-center">
+            <div class="fw-bold text-secondary fs-5">&#x20AC; 44.00</div>
+          </div>
+          <!-- 'x' remove product -->
+          <div>
+            <div class="text-secondary fw-bold fs-5">X</div>
+          </div>
+        </div>
+        <!-- back to shop -->
+        <div class="d-flex mt-5 pt-5 gap-2 fw-bold align-items-center fs-5 text-body-tertiary">
+          <!-- <div><i class="bi bi-arrow-left"></i></div> -->
+          <div class="fs-3">&#8592</div>
+          <div>Back to shop</div>
+        </div>
+      </div>
+      <!-- right side -->
+      <div class="right container col-4 bg-light d-flex justify-content-center">
+        <!-- summary -->
+        <div class="d-flex flex-column col-9 ">
+          <!-- summary title -->
+          <div class="mt-4 mb-1 pt-3 pb-4 ">
+            <h2 class="fw-bold text-secondary pb-3">Summary</h2>
+          </div>
+          <!-- sumarry info -->
+          <div class="border-bottom border-2 border-top pt-5 pb-5 mb-4">
+            <div class="d-flex justify-content-between text-secondary mt-1 mb-3">
+              <div>
+                <h4>ITEMS 3</h4>
+              </div>
+                <div>
+                  <h4>&#x20AC; 132.00</h4>
+              </div>
+            </div>
+            <div>
+                <h4 class="text-secondary mb-3">SHIPPING</h4>
+                <select class="form-select-sm text-body-tertiary border-dark-subtle fw-semibold col-12 mb-4 p-2">
+                  <option selected>Standart-Delivery-&#x20AC;5.00</option>
+                </select>
+            </div>
+            <div>
+              <h4 class="text-body-tertiary border-dark-subtle fw-semibold col-12 p-2">GIVE CODE</h4>
+              <input class="p-1 ps-2 col-12" type="text" placeholder="Enter your code">
+            </div>
+          </div>
+          <!-- total price -->
+          <div class="mt-1 d-flex justify-content-between">
+            <div>
+              <h4 class="text-secondary">TOTAL PRICE</h4>
+            </div>
+            <div><h4>&#x20AC 137.00</h4></div>
+          </div>
+          <!-- register btn -->
+          <div>
+            <button class="col-12 text-white bg-dark pt-2 pb-3 lh-sm rounded-2 mt-5">REGISTER</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
